@@ -6,18 +6,24 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home_container">
-      <Link to="/a">
-        <Button variant="contained">Contained</Button>
-      </Link>
-      <Link to="/b">
-        <Button variant="outlined">Outlined</Button>
-      </Link>
-      <Link to="/c">
-        <Button variant="contained">Contained</Button>
-      </Link>
-      <Link to="/d">
-        <Button variant="outlined">Outlined</Button>
-      </Link>
+      <div className="home_container_container">
+        <div className="home_container_div">
+          <Link to="/a">
+            <Button variant="contained">Contained</Button>
+          </Link>
+          <Link to="/b">
+            <Button variant="outlined">Outlined</Button>
+          </Link>
+        </div>
+        <div className="home_container_div">
+          <Link to="/c">
+            <Button variant="contained">Contained</Button>
+          </Link>
+          <Link to="/d">
+            <Button variant="outlined">Outlined</Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
